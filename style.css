@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -31,7 +33,6 @@ header {
         justify-content: space-around;
   }
 }
-
 nav h2 {
   color: white;
   text-transform: uppercase;
@@ -41,7 +42,6 @@ nav h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
 @media (min-width: 768px) {
   nav h2 {
     margin-bottom: 0;
@@ -73,7 +73,7 @@ footer {
 .scroll {
   width: 100%;
   height: 250px;
-  background-color: #b0ffc2;
+  background-color: #363d38;
 }
 
 .scroll:nth-child(even) {
@@ -97,8 +97,8 @@ footer {
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s, background-color 0.3s 0s;
   bottom: 20px;
   right: 10px;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -117,7 +117,6 @@ footer {
           justify-content: center;
   border-radius: 3px;
 }
-
 .backtotop img {
   width: 50%;
   height: auto;
@@ -129,6 +128,5 @@ footer {
 }
 
 .backtotop:hover {
-  background-color: #FE701B;
-}
-/*# sourceMappingURL=style.css.map */
+  background-color: #fe701b;
+}/*# sourceMappingURL=style.css.map */
