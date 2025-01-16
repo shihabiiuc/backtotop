@@ -1,16 +1,18 @@
-const backtotoplink = document.getElementById("gotop");
+const gototop = document.getElementById("gotop");
+
 const onScroll = () => {
   const scroll = document.documentElement.scrollTop;
   const threshold = window.innerHeight * 0.3;
+
   if (scroll > threshold) {
-    backtotoplink.classList.add("active");
+    gototop.classList.add("active");
   } else {
-    backtotoplink.classList.remove("active");
+    gototop.classList.remove("active");
   }
 };
 window.addEventListener("scroll", onScroll);
 
-backtotoplink.addEventListener("click", () => {
+gototop.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
